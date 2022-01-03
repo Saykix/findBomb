@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>find the bomb</title>
+    <link rel="stylesheet" href="./bomb.css">
+    <script src="./bomb.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+</head>
+
+<body>
+
+    <div id="titre">
+        <h1>Trouver la bombe avec le moins de tentative possible!</h1>
+    </div>
+    <div id="interaction">
+        <p id="result"></p>
+        <button id="button" value = "retry" type = "submit" onclick="retry()" >retry</button>
+        <p id="tri"></p>
+        <p id="record"></p>
+    </div>
+
+   <div id="board">
+       <div class="row" id="row-1">
+           <div class="tile" id="tile-0-0" onclick="doClick('tile-0-0')"></div>
+           <div class="tile" id="tile-0-1" onclick="doClick('tile-0-1')"></div>
+           <div class="tile" id="tile-0-2" onclick="doClick('tile-0-2')"></div>
+           <div class="tile" id="tile-0-3" onclick="doClick('tile-0-3')"></div>
+       </div>
+
+       <div class="row" id="row-2">
+            <div class="tile" id="tile-1-0" onclick="doClick('tile-1-0')"></div>
+            <div class="tile" id="tile-1-1" onclick="doClick('tile-1-1')"></div>
+            <div class="tile" id="tile-1-2" onclick="doClick('tile-1-2')"></div>
+            <div class="tile" id="tile-1-3" onclick="doClick('tile-1-3')"></div>
+       </div>
+
+       <div class="row" id="row-3">
+            <div class="tile" id="tile-2-0" onclick="doClick('tile-2-0')"></div>
+            <div class="tile" id="tile-2-1" onclick="doClick('tile-2-1')"></div>
+            <div class="tile" id="tile-2-2" onclick="doClick('tile-2-2')"></div>
+            <div class="tile" id="tile-2-3" onclick="doClick('tile-2-3')"></div>
+       </div>
+
+       <div class="row" id="row-4">
+            <div class="tile" id="tile-3-0" onclick="doClick('tile-3-0')"></div>
+            <div class="tile" id="tile-3-1" onclick="doClick('tile-3-1')"></div>
+            <div class="tile" id="tile-3-2" onclick="doClick('tile-3-2')"></div>
+            <div class="tile" id="tile-3-3" onclick="doClick('tile-3-3')"></div>
+       </div>
+
+   </div>
+
+</body>
+</html>
